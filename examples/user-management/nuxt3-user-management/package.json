@@ -7,7 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxtjs/supabase": "^0.2.0",
-    "nuxt": "3.0.0-rc.11"
+    "@nuxtjs/supabase": "^0.3.1",
+    "nuxt": "3.2.3"
   }
 }

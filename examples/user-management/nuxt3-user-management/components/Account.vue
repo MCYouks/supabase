@@ -48,7 +48,7 @@ const { data: profile } = await useAsyncData('profile', async () => {
     return data
 })
 
-if (profile.value.username) {
+if (profile.value?.username) {
     username.value = profile.value.username
     website.value = profile.value.website
     avatar_path.value = profile.value.avatar_url
@@ -60,7 +60,7 @@ async function updateProfile() {
         const user = useSupabaseUser();
         const updates = {
             id: user.value.id,
-            username: username.value,
+            username: username?.value,
             website: website.value,
             avatar_url: avatar_path.value,
             updated_at: new Date(),
